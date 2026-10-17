@@ -1,17 +1,27 @@
-
-import { Zap } from "lucide";
+import { Zap, ZapIcon } from "lucide-react";
 import React from "react";
 
 export const Sidebar = () => {
   return (
     <div className="transition duration-300 ease-in-out bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-r border-slate-200/50 dark:border-slate-700/50 flex flex-col relative z-10">
+      {/* Conditional Rendering */}
       <div className="p-6 border-b border-slate-200/50 dark:border-slate-700/50">
-        <div className="flex items-center space-x-3"></div>
-        <div className="w-10 h-10 bg-linear-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-          {/* <Zap /> */}
-          <Zap />
+        <div className="flex items-center space-x-3">
+          <div className="w-10 h-10 bg-linear-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+            <ZapIcon className="text-white w-6 h-6" />
+          </div>
+          {/* Conditional Rendering */}
+          <div>
+            <h1 className="text-xl font-bold text-slate-800 dark:text-white">Nexus</h1>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Admin Panel</p>
+          </div>
         </div>
       </div>
+      {/* Navigation */}
+
+      <nav className="flex-1" ></nav>
+
+
     </div>
   );
 };
