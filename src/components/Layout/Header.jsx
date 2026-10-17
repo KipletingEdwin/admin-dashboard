@@ -1,5 +1,5 @@
 
-import { Bell, Filter, Menu, Plus, Search, Settings, Sun } from 'lucide-react'
+import { Bell, ChevronDown, Filter, Menu, Plus, Search, Settings, Sun } from 'lucide-react'
 import React from 'react'
 
 const Header = () => {
@@ -62,7 +62,7 @@ const Header = () => {
 
           <div className='flex items-center space-x-3 pl-3 border-l border-slate-200 dark:border-slate-700'>
             <img 
-            src='' 
+            src='https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg' 
             alt='user' 
             className='w-8 h-8 rounded-full ring-2 ring-blue-500'
             />
@@ -70,6 +70,7 @@ const Header = () => {
               <p className='text-sm font-medium text-slate-500 dark:text-slate-400'>Edwin Kipleting</p>
               <p className='text-xs text-slate-500 dark:text-slate-400 '>Administrator</p>
             </div>
+            <ChevronDown className='w-4 h-4 text-slate-400'/>
           </div>
 
 
