@@ -19,7 +19,24 @@ export const Sidebar = () => {
       </div>
       {/* Navigation */}
 
-      <nav className="flex-1" ></nav>
+      <nav className="flex-1 p-4 space-y-2 overflow-y-auto"></nav>
+
+      {/* User Profile */}
+      <div className="p-4 border-t border-slate-200/50 dark:border-slate-700/50">
+        <div className="flex items-center space-x-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50">
+          <img 
+          src="https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg" 
+          alt="user" 
+          className="w-10 h-10 rounded-full ring-2 ring-blue-500"
+          />
+          <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-medium text-slate-800 dark:text-white truncate">Edwin Kipleting</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 truncate">Administrator</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </div>
