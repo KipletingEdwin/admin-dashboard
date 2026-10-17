@@ -1,5 +1,5 @@
 
-import { Filter, Menu, Plus, Search } from 'lucide-react'
+import { Filter, Menu, Plus, Search, Sun } from 'lucide-react'
 import React from 'react'
 
 const Header = () => {
@@ -38,10 +38,14 @@ const Header = () => {
         {/* Right */}
         <div className='flex items-center space-x-3 '>
           {/* Quick Action */}
-          <div className='hidden lg:flex items-center space-x-2 py-2 px-4 bg-linear-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all'>
+          <button className='hidden lg:flex items-center space-x-2 py-2 px-4 bg-linear-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all'>
             <Plus className='w-4 h-4'/>
             <span className='text-sm font-medium'>New</span>
-          </div>
+          </button>
+          {/* Toggle */}
+          <button className='p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors'>
+            <Sun className='w-5 h-5'/>
+          </button>
         </div>
 
       </div>
